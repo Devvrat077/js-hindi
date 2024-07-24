@@ -27,7 +27,7 @@ let stringChar1 = string.at(4);// we need to pass the position value in the brac
 console.log(stringChar1);  // it will print the 4th character of the string value i.e "r".
 //OR
 console.log(string.at(4));
-console.log(string.at(-12));// it will print the char at 13 posotion from right side of string., 
+console.log(string.at(-12));// it will print the char at 12 posotion from right side of string., 
 // note - from end /right side , count starts from 1 not from 0.
 
 //(B) .charAt() Method  , in it we were not able to pass (-ve) value directly.
