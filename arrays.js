@@ -90,9 +90,17 @@ console.log(sliceArray2); // => [2,3]
 // 10th-------------------splice()------------------
 // this method is used to add items in a array and slice items into a new array
 // Most IMP - splice() method manipulates/changes the original array , removes items from original array
-let spliceArray = array.splice(1,3);
-console.log(spliceArray);
-console.log(array);
+// addition of new items at an given index -----
+let array2 = [10,11,12,13,14,15,16,17,18,19,20];
+let spliceArray2 = array2.splice(3,1,12.1,12.2,12.3);// here 3 is index on which new items will be added, 1 tells us how many items will be removed from original array, 12.1,12.2,12.3 are the new items to be added at index 3.
+console.log(spliceArray2);// => [13]
+console.log(array2);//=> [10,11,12,12.1,12.2,12.3,......]
+// how to remove items from array by splice() method 
+let spliceArray = array.splice(1,3);// here 1 is index from where removing is done , 3 tells us that 3 items will be removed from orignal array.
+console.log(spliceArray);// => [2,3,4]
+console.log(array);// => [1,5,6,7,8,9]
+
+ 
 
 
 
