@@ -124,6 +124,7 @@ console.log(objfunction()); // >  { city: 'lucknow' } ,  after using () it retur
 
 
 
-
+// => Note  ,,  we can hold a Arrow function into a variable but we cannot name a Arrow function , 
+// Arrow function  is always anonymous i.e. without name .
 
  
