@@ -166,3 +166,57 @@ if(number%2 == 0){
 } else{ console.log(`number ${number} is divisible by 7`);}
 
 // output => number divisible by 7 .
+
+
+
+// ----------- And (&&) , OR (||) in  if - else statement.
+
+// 1st - And &&  => when we check multiple conditions in if-else statement then we use it. exp--
+
+const isLoggedin = true;
+const premiumUser = true;
+
+if (isLoggedin && premiumUser) {
+  console.log("hey u  can avail offer");
+  
+}
+
+/* => note when we check more than one condition in If  statement by && operator 
+then Note - && operator checks all condition is returns "true" 
+when it finds all conditions are "true" then it runs the "if" block code . 
+note - when any of the  condition do not returns "true " then it do not runs "if" block code.
+exp ---- */
+
+const gender = "male";
+const userName = "shyam";
+
+if (gender == 'male' && userName == "sundar"){
+ 
+  console.log("wlcom sundar");
+  
+} else {console.log("you are not sunder sorry");
+}
+
+// here in above "if" statement do not execute as  both the conditions do not returns "true"
+// so "else" statement block code runs. 
+
+// Basically - it is like SQL AND operator .
+
+/* 2nd => OR || => when we have to check multiple conditions and if any of them will return
+ "true" then the "if" block code will run .
+
+ exp ---  */
+
+ const cast = "hindu";
+ const isIndian = false;
+ const phone = 99999999;
+ 
+ if(cast == "hindu" || isIndian || phone == 888888) {
+  console.log("Hello Dude!");
+  
+ } 
+
+ /* => output ===> "hello dude" , here we can see that only 'cast' returns true , rest other conditions
+   returns false , but  our 'if' block code runs  when any of the condition returns "true"
+
+   Note - Basically OR || is like SQL 'OR' oprrator  
